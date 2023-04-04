@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 540px;
+    height: 960px;
+    background: #FFFFFF;
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    width: 380px;
+    color: #0068FF;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.inputbox {
+    outline: none; /* 클릭 시, 테두리 없도록 */
+
+    width: 380px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+
+    padding: 15px;
+
+    margin-top: 20px;
+}
+
+.phone__wrapper {
+    width: 380px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.phone {
+    width: 100px;
+    height: 40px;
+    padding: 15px;
+
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.token__wrapper {
+    width: 380px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #D2D2D2;
+
+    margin-top: 20px;
+}
+
+.token__button {
+    width: 120px;
+    height: 40px;
+    margin-left: 21px;
+
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+    color: #D2D2D2;
+}
+
+.check__wrapper {
+    width: 380px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #D2D2D2;
+
+    margin-top: 20px;
+}
+
+.check__button {
+    width: 120px;
+    height: 40px;
+    margin-left: 21px;
+
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+    color: #D2D2D2;
+}
+
+.location__wrapper {
+    margin-top: 20px;
+}
+
+.location {
+    outline: none;
+
+    width: 380px;
+    height: 60px;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+}
+
+.gender__wrapper {
+    width: 380px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.gender__radio {
+    width: 20px;
+    height: 19.95px;
+
+    background: #EBEBEB;
+    border: 1px solid #D2D2D2;
+}
+
+hr {
+    width: 380px;
+    margin-top: 32px;
+}
+
+.signup {
+    width: 380px;
+    height: 75px;
+    margin-top: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    color: #d2d2d2;
+    font-weight: 400;
+    font-size: 18px;
+}

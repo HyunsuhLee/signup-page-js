@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>:: 회원가입</title>
+    <link href="./style/signup-webPage-jscode.css" rel="stylesheet">
+    <script src="./js/signup-webPage-jscode.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h3>회원가입</h3>
+
+        <input class="inputbox" id="email" type="text" placeholder="이메일을 입력해주세요.">
+        <div id="erroremail"></div>
+        <input class="inputbox" id="name"  type="text" placeholder="이름을 입력해주세요.">
+        <div id="errorname"></div>
+        <input class="inputbox" id="pw1" type="password" placeholder="비밀번호를 입력해주세요.">
+        <div id="errorpw1"></div>
+        <input class="inputbox" id="pw2" type="password" placeholder="비밀번호를 다시 입력해주세요.">
+        <div id="errorpw2"></div>
+
+        <div class="phone__wrapper">
+            <input class="phone" id="phone1" type="text" oninput="phoneFocus1()" maxlength="3"> ㅡ
+            <input class="phone" id="phone2" type="text" oninput="phoneFocus2()" maxlength="4"> ㅡ 
+            <input class="phone" id="phone3" type="text" oninput="tokenButton3()" maxlength="4">
+        </div>
+        <div id="errorphone"></div>
+
+        <div class="token__wrapper">
+            <div id="token">000000</div>
+            <button onclick="tokenButton()" class="token__button" id="token__button" disabled>인증번호 전송</button>
+        </div>
+        <div class="check__wrapper">
+            <div id="timer">3:00</div>
+            <button onclick="checkOK()" class="check__button" id="check__button" disabled>인증확인</button>
+        </div>
+
+        <div class="location__wrapper">
+            <select class="location" id="location">
+                <option disabled="true" selected="true">지역을 선택하세요.</option>
+                <option>서울</option>
+                <option>경기</option>
+                <option>인천</option>
+            </select>
+        </div>
+        <div id="errorlocation"></div>
+
+        <div class="gender__wrapper">
+            <div class="gender">
+                <input class="gender__radio" id="gender__women" type="radio" name="gender"> 여성
+            </div>
+            <div class="gender">
+                <input class="gender__radio" id="gender__men" type="radio" name="gender"> 남성
+            </div>
+        </div>
+        <div id="errorgender"></div>
+        <hr>
+        <button onclick="signupButton()" class="signup" id="signup" disabled>가입하기</button> 
+    </div>
+</body>
+</html>
